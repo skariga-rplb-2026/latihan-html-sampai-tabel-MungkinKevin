@@ -7,6 +7,32 @@ body {
 }
 
 table {
-    background-color: whitesmoke;
+    background-color: crimson;
 }
- 
+
+.btn {
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.submit {
+    padding: 20px 20px;
+}
+
+.reset {
+    margin: 20px 20px;
+}
+
+.klik {
+    
+}
+
+input, textarea {
+    background-color: red;
+}
