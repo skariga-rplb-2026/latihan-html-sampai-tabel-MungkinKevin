@@ -1,17 +1,20 @@
 <html>
     <head>
         <title>Latihan Form</title>
-    </head>\
+    </head>
     <body>
-        <h3>Latihan form</h3>
+        <h3 align="center">Latihan form</h3>
 
         <form action="#" method="GET">
             Nama: <input type="text" name= "name" size="40">
             <br><br>
 
-            Umur: <input type="number" name="umur">
+            Umur: <input type="number" name="umur" max="4">
         </form>
-
+        <br><br>
+        Keluhan: <br>
+            <textarea name="" id="" width></textarea>
+        <br><br>
         Warna pilih: <input type="color">
         <br><br>
 
@@ -48,6 +51,33 @@
         Week: <input type="week">
         <br><br>
 
-        <input type="checkbox" name="" id="">
+        Hobby: <br>
+            <input type="checkbox" name="hobby[]" id=""> Reading <br>
+            <input type="checkbox" name="hobby[]" id=""> Gaming <br>
+            <input type="checkbox" name="hobby[]" id=""> Watching Anime <br>
+            <input type="checkbox" name="hobby[]" id=""> Breathing <br>
+        <br>
+        
+        Jenis Kelamin: <br>
+            <input type="radio" name="JenisKelamin[]" id=""> Pria <br> <!--Agar = radio group/ hanya bisa pilih salah satu cukup menyamakan variable nya-->
+            <input type="radio" name="JenisKelamin[]" id=""> Wanita <br>
+            <input type="radio" name="JenisKelamin[]" id=""> Tidak ingin menyebutkan <br>
+        <br>
+
+        Kota Asal: <br>
+        <select name="Kota_Asal" id=""> <!--Name (Var)-->
+            <option value="Kediri"> Kediri </option> <!--Value-->
+            <option value="Malang"> Malang </option>
+            <option value="Surabaya"> Surabaya </option>
+        </select>
+        <br><br>
+
+        <input type="button" onclick="alert('Lo sok asik katrok')" value="Jangan Klik!!!!!!!!!!!!!!!!!!">        
+        <br><br>
+        <form action="">
+        <input type="button" value=""> Klik <br>
+        <input type="submit" value=""> Submit <br>
+        <input type="reset" value=""> Reset <br>
+        </form>
     </body>
 </html>

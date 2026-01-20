@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>Latihan Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h2 align="center">FORM ISIAN</h2>
+
+        <table>
+        <form action="">
+            <tr>
+                <td> <strong> Nama Depan </strong> </td>
+                <td> <input type="text" name="Nama_Depan" id=""> </td>
+            </tr>
+            <tr>
+                <td> <strong> Nama Belakang </strong> </td>
+                <td> <input type="text" name="Nama_Belakang" id=""> </td>
+            </tr>
+            <tr>
+                <td> <strong> Alamat </strong> </td>
+                <td> <textarea name="Alamat" id="" cols="30" rows="10" ></textarea></td>
+            </tr>
+            <tr>
+                <td> <strong>Tanggal Lahir</strong> </td>
+                <td> <input type="date" name="Tgl_Lahir" id=""></td>
+            </tr>
+            <tr>
+                <td>
+                     <strong> Berat Badan </strong>  <br>
+                     <strong> Tinggi Badan </strong>
+                </td>
+                <td>
+                     <input type="number" name="Bobot" id="" min="0">KG  <br>
+                     <input type="number" name="Tinggi" id="" min="0">Cm
+                </td>
+            </tr>
+            <tr>
+                <td> <strong> Warna Kesukaan</strong> </td>
+                <td> <input type="color" name="F_Color" id=""> </td>
+            </tr>
+            <tr>
+                <td> <strong> Username </strong> </td>
+                <td> <input type="text" name="Username" id="" maxlength="8"> </td>
+            </tr>
+            <tr>
+                <td> <strong> Password </strong> </td>
+                <td> <input type="password" name="Password" id=""> </td>
+            </tr>
+            <tr>
+                <td> <strong> Hobby </strong> </td>
+                <td>
+                    <input type="checkbox" name="hobby[]" id="" value="Baca"> Membaca <br>
+                    <input type="checkbox" name="hobby[]" id="" value="Nonton"> Nonton <br>
+                    <input type="checkbox" name="hobby[]" id="" value="Game"> Main Game <br>
+                </td>
+            </tr>
+            <tr>
+                <td> <strong> Jenis Kelamin </strong> </td>
+                <td> 
+                    <input type="radio" name="JenisKelamin" id="" value="Pria"> Laki-Laki <br>
+                    <input type="radio" name="JenisKelamin" id="" value="Wanita"> Perempuan <br>
+                </td>
+                <tr>
+                    <td> <strong> Kota Asal </strong> </td>
+                    <td>
+                        <select name="Kota_Asal" id="">
+                            <option value="Kediri"> Kediri </option> <br>
+                            <option value="Amsterdam"> Amsterdam </option> <br>
+                            <option value="Moskow"> Moskow </option> <br>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <strong> Upload Gambar </strong> </td>
+                    <td> <input type="file" name="Gambar" id="" </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td> 
+                        <input type="submit" value="Submit">  
+                        <input type="reset" value="Reset">  
+                        <input type="button" onclick="alert('Tes')" value="Jangan"> 
+                    </td>
+                </tr>
+            </tr>
+        </form>
+        </table>
+    </body>
+</html>
