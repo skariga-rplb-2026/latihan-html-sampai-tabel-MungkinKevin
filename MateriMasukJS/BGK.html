@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body align="center">
+    <h1>SUIT</h1>
+    <table width="100%" height="500px" border="1" align="center">
+        <tr>
+            <td>
+                <h2>YOU</h2>
+                <button onclick="main('batu')">batu</button>
+                <button onclick="main('gunting')">gunting</button>
+                <button onclick="main('kertas')">kertas</button> <br>
+                <img src="img/batu.jpg" alt="batu" id="pil_user">
+                
+            </td>
+            <td width="50%">
+                <h2>COM</h2>
+                <img src="img/kertas.jpg" id="pil_com" width="100px">
+                
+            </td>
+        </tr>`
+        <tr>
+            <td colspan="2" align="center">
+                <p id="hasil">HASIL</p>
+                <p id="skor">Skor user: 0| Skor Komputer: 0</p>
+            </td>
+        </tr>
+    </table>
+    <script src="suit.js"></script>
+</body>
+</html>
