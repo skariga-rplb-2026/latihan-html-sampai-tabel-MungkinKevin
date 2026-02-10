@@ -1,8 +1,8 @@
-//board
+//board---> elemen <canvas> utk menggambar game
 let board
-let boardwidth = 360
+let boardwidth = 360 //boardwidth & height -> ukuran cavas
 let boardheight = 640
-let context
+let context //metode menggambar canvas yaitu 2d
 
 //bird
 let birdWidth = 34
@@ -14,8 +14,8 @@ let birdImg;
 let bird = {
     x : birdX,
     y : birdY,
-    width : boardwidth,
-    height : boardheight
+    width : birdWidth,
+    height : birdHeight
 }
 
 //pipa
@@ -45,7 +45,7 @@ window.onload = function() {
 
 //load images
 birdImg = new Image()
-birdImg.src = "./img/flappybird.png"
+birdImg.src = "./img/flappybird.jpg"
 birdImg.onload = function() {
     context.drawImage(birdImg, bird.x, bird.y, bird.width, bird.height)
 }
