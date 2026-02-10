@@ -5,13 +5,13 @@ let boardheight = 640
 let context //metode menggambar canvas yaitu 2d
 
 //bird
-let birdWidth = 34
-let birdHeight = 24
+let birdWidth = 30 
+let birdHeight = 24 //& birdWidth -> ukuran burung 
 let birdX = boardwidth/8
-let birdY = boardheight/2
+let birdY = boardheight/2 // & birdX -> menentukan posisi awal burung pada canvas
 let birdImg;
 
-let bird = {
+let bird = { //objek yang merepresentasikan burung dengan properti width & height
     x : birdX,
     y : birdY,
     width : birdWidth,
@@ -19,10 +19,10 @@ let bird = {
 }
 
 //pipa
-let pipeArray = []
-let pipeWidth = 64
-let pipeHeight = 512
-let pipeX = boardwidth
+let pipeArray = [] // menyimpan semua pipa yang muncul di layar
+let pipeWidth = 64 //pipe's size
+let pipeHeight = 512 //pipe's sizesize
+let pipeX = boardwidth // menentukan posisi awal pipa
 let pipeY = 0
 
 let topPipeImg
@@ -35,6 +35,8 @@ let gravity = 0.4
 
 let gameOver = false
 let score = 0
+
+let highScore = 0
 
 window.onload = function() {
     board = document.getElementById("board")
@@ -57,7 +59,7 @@ bottomPipeImg = new Image()
 bottomPipeImg.src = "./img/bottompipe.png"
 
 requestAnimationFrame(update)
-setInterval(placePipes, 1500)
+setInterval(placePipes, 1100)
 document.addEventListener("keydown", moveBird)
 }
 
@@ -104,7 +106,7 @@ function update(){
     if (gameOver) {
         context.fillText("GAME OVER", 5, 90)
     }
-}
+} 
 
 function placePipes() {
     if (gameOver) {
