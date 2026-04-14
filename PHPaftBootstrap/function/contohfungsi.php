@@ -23,8 +23,8 @@
     $pembulatannaik = ceil($decimal);
     echo "Pembulatan nilai naik : $pembulatannaik <br/>";
 
-    $pendekatan = round($decimal,3); #3 itu untuk digit angka dibelakang koma
+    $pendekatan = round(12.67849,3); #3 itu untuk digit angka dibelakang koma
     echo "Pendekatan nilai : $pendekatan <br/>";
 
-    echo sqrt(pow(2,3) - 4) ;
+    echo sqrt(pow(2,3) - 4);
 ?>

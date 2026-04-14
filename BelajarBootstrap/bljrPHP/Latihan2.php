@@ -65,7 +65,7 @@
     echo $garis.'<br>';
     //double quoted
     echo "Double quoted <br>";
-    echo "budi berkata, 'I\"ll do the PHP code' <br>"; echo "PHP ini terletak di C:\php\ <br>";
+    echo "budi berkata, 'I\"ll do the PHP code' <br>"; echo "PHP ini terletak di C:\xampp\htdocs\BelajarBootstrap\bljrPHP <br>";
 
 ?>
 </body>

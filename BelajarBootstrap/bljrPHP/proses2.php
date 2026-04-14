@@ -1,6 +1,6 @@
 Machine Kasir <hr>
 <?php
-    $namaBarang = $_POST[["namaBarang"];
+    $namaBarang = $_POST["namaBarang"];
     $harga = $_POST['harga'];
     $jumlah = $_POST['jml'];
     $garis = "=====================================";
