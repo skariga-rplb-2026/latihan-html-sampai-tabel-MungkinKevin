@@ -37,7 +37,7 @@
     <form action="" method="POST">
 
     <select name="mapel" id="" onchange="this.form.submit()"> #untuk pilihan
-        <option value="" >semua</option>
+        <option value="semua" >semua</option>
         <option value="Matematika" <?php echo ($filter == "Matematika")? "selected" : ""; ?>>Matematika</option>
         <option value="Fisika" <?php echo ($filter == "Fisika")? "selected" : ""; ?>>Fisika</option>
         <option value="Bahasa_Inggris" <?php echo ($filter == "Bahasa_Inggris")? "selected" : ""; ?>>Bahasa Inggris</option>
@@ -58,7 +58,7 @@
         $dataTampil = [];
         if (isset($_POST["mapel"])) { #filter form pemilihan
             $filter = $_POST["mapel"];
-            if ($filter == "") {
+            if ($filter == "" || $filter == "semua") {
                 $dataTampil = $data;
             } else {
                 foreach($data as $d) {
@@ -68,7 +68,7 @@
                 }
             }
         } else  {
-            $dataTampil[] = $data;
+            $dataTampil = $data;
         }
         foreach($dataTampil as $d) { #menampilkan tiap2 isi array $data
             
