@@ -47,7 +47,7 @@ window.onload = function() {
 
 //load images
 birdImg = new Image()
-birdImg.src = "./img/flappybird.jpg"
+birdImg.src = "./img/flappybird.png"
 birdImg.onload = function() {
     context.drawImage(birdImg, bird.x, bird.y, bird.width, bird.height)
 }
@@ -59,7 +59,7 @@ bottomPipeImg = new Image()
 bottomPipeImg.src = "./img/bottompipe.png"
 
 requestAnimationFrame(update)
-setInterval(placePipes, 1100)
+setInterval(placePipes, 1800)
 document.addEventListener("keydown", moveBird)
 }
 
